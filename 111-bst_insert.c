@@ -6,8 +6,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 	bst_t *current;
 
 	if (!tree)
-		return NULL;
-
+		return (NULL);
 	current = *tree;
 
 	while (current)
@@ -15,10 +14,8 @@ bst_t *bst_insert(bst_t **tree, int value)
 		if (value < current->n)
 		{
 			if (!current->left)
-			{
 				current->left = (binary_tree_node(current, value));
 				return (current->left);
-			}
 
 			else
 			{
@@ -30,7 +27,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 			if (!current->right)
 			{
 				current->right = (binary_tree_node(current, value));
-				return current->right;
+				return (current->right);
 			}
 			else
 			{
@@ -39,10 +36,10 @@ bst_t *bst_insert(bst_t **tree, int value)
 		}
 		else
 		{
-			return NULL;
+			return (NULL);
 		}
 	}
 
 	*tree = (binary_tree_node(current, value));
-	return *tree;
+	return (*tree);
 }
