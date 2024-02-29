@@ -1,11 +1,14 @@
 #include "binary_trees.h"
 
+
 bst_t *bst_insert(bst_t **tree, int value)
 {
+	bst_t *current;
+
 	if (!tree)
 		return NULL;
 
-	bst_t *current = *tree;
+	current = *tree;
 
 	while (current)
 	{
