@@ -48,7 +48,6 @@ bst_t *bst_insert(bst_t **tree, int value)
 			return (NULL);
 		}
 	}
-
 	*tree = (binary_tree_node(current, value));
 	return (*tree);
 }
