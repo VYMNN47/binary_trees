@@ -13,7 +13,8 @@ size_t binary_tree_size(const binary_tree_t *tree)
 }
 
 
-int binary_tree_is_complete_rec(const binary_tree_t *tree, size_t count, size_t index)
+int binary_tree_is_complete_rec(const binary_tree_t *tree, size_t count,
+		size_t index)
 
 {
 	if (tree)
